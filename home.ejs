@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div class="ui main text container segment"  style="background-color:black;">
+    <div class="ui huge header" style="color:white">New Data</div>
+    <form class="ui form " action="/" method= "POST">
+        <div class="field">
+            <label><h3 style="color:white">Name</h3></label>
+            <input type="text" name="form[name]" placeholder="Name" style="border: 2px solid white; font-size: 15px;">
+        </div>
+        
+        <div class="field">
+                <label><h3 style="color:white">Reg No</h3></label>
+                <input type="text" name="form[regno]" placeholder="Reg no" style="border: 2px solid black;  font-size: 15px;">
+         </div>
+         <div class="field">
+            <label><h3 style="color:white">Email</h3></label>
+            <input type="text" name="form[email]" placeholder="email" style="border: 2px solid black;  font-size: 15px;">
+        </div>
+        <div class="field">
+            <label><h3 style="color:white">Contact</h3></label>
+            <input type="text" name="form[contact]" placeholder="contact" style="border: 2px solid black;  font-size: 15px;">
+        </div>
+        
+        <input class="ui inverted orange button" type="submit" style="border:1px solid black">
+        
+    </form>
+</div>
+

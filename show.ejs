@@ -1,0 +1,39 @@
+
+<% include ./partials/header %>
+
+
+
+<div class="ui main text container" style="background-color:black;">
+        
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col" style="color:white;">name</th>
+        <th scope="col" style="color:white;">reg no</th>
+        <th scope="col" style="color:white;">email</th>
+        
+        <th scope="col" style="color:white;">Contact</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+            
+    <% form.forEach(function(form){ %>
+      <tr>
+        
+        <th scope="row" style="color:white;"><%= form.name %></th>
+        <td style="color:white;">  <%= form.regno %></td>
+        <td style="color:white;"> <%= form.email %></td>
+        <td style="color:white;">  <%= form.contact %></td>
+       
+        
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  
+</div> 
+
+
+
+
